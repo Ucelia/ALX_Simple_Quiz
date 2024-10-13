@@ -4,7 +4,7 @@ function checkAnswer(){
     if(getSelectedValue !=null){
         userAnswer = getSelectedValue.value;
     }
-    if(userAnswer == correctAnswer){
+    if(userAnswer === correctAnswer){
         document.getElementById('feedback').textContent= 'Correct! Well done.';
     }else{
         document.getElementById('feedback').textContent='incorrect. Try again!';
